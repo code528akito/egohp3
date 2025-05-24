@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo.jpg" type="image/jpeg" alt="skilowgue"/>
+    <title>Skilowgue</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* カスタムスタイルがあればここに追加 */
+        body {
+            font-family: sans-serif; /* 基本フォントを指定 */
+        }
+        .hero-bg-purple {
+            background-color: #f3e8ff; /* 画像に近い薄い紫色 */
+        }
+        .section-bg-light-purple {
+            background-color: #faf5ff; /* さらに薄い紫色 */
+        }
+        .text-purple-700 {
+            color: #6b46c1; /* 紫色のテキスト */
+        }
+        .text-purple-600 {
+            color: #7c3aed;
+        }
+        .text-purple-500 {
+            color: #8b5cf6;
+        }
+        .border-purple-500 {
+            border-color: #8b5cf6;
+        }
+        .bg-purple-100 {
+            background-color: #ede9fe;
+        }
+        .bg-purple-500 {
+            background-color: #8b5cf6;
+        }
+         .bg-purple-600 {
+            background-color: #7c3aed;
+        }
+
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+<div class="min-h-screen flex flex-col bg-[#F7F2FF]">
+    <!-- Header -->
+    <div class="w-full flex justify-center pt-8 pb-4 fixed top-0 left-0 z-50">
+        <header class="w-full max-w-7xl flex items-center bg-white rounded-full shadow px-14 py-4 border">
+            <a href="/" class="flex items-center space-x-3 font-bold text-xl md:text-2xl text-purple-600">
+                <img src="/images/logo.jpg" alt="ロゴ" class="w-10 h-10 rounded-full object-cover" />
+                <span>skilowgue</span>
+            </a>
+            <nav class="flex-1 flex justify-end">
+                <a href="/company.html" class="ml-8 text-base font-semibold text-purple-600 hover:border-b-2 hover:border-[#7C3AED]">会社概要</a>
+                <a href="/representative.html" class="ml-8 text-base font-semibold text-purple-600 hover:border-b-2 hover:border-[#7C3AED]">代表挨拶</a>
+            </nav>
+        </header>
+    </div>
+
+    <main class="flex-grow w-full pt-40">
+    <!-- 一言サービス説明 -->
+    <section class="w-full flex flex-col items-center py-24 bg-[#F7F2FF]">
+        <h1 class="text-4xl md:text-6xl font-bold text-[#7C3AED] text-center leading-snug mb-8 max-w-5xl">タレントマネジメントを通して<br />組織と個人のスキル開発を実現する</h1>
+    </section>
+
+    <!-- skilowgueとは？ -->
+    <section class="w-full bg-white py-16">
+        <div class="max-w-5xl mx-auto px-8">
+            <div class="font-bold text-3xl text-purple-600 mb-6">skilowgueについて</div>
+            <div class="text-gray-800 font-bold text-lg mb-10">スキローグは、メンバーが毎日の行動を「成長ログ」として蓄積・可視化し、スキルデータを分析の上、ゲーム感覚で楽しみながら、自己実現に向けたスキル開発や人財最適配置の基盤を提供するシステムです。</div>
+            <div class="mb-4 font-bold text-purple-600 text-2xl">Vision</div>
+            <div class="text-gray-500 mb-8 text-xl">一人ひとりが「失敗しない」学習機会と、成長の歩みが証明できる社会を作る</div>
+            <div class="mb-4 font-bold text-purple-600 text-2xl">Mission</div>
+            <div class="text-gray-500 text-xl">日々の学びや気づきを可視化し、成長の軌跡とスキル開発を支援する</div>
+        </div>
+    </section>
+
+    <!-- 選ばれる理由 -->
+    <section class="w-full bg-[#F7F2FF] py-16">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div class="bg-white rounded-2xl shadow p-10 flex flex-col items-center min-h-[260px]">
+                <!-- Heroicon: DocumentTextIcon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 mb-4 text-[#7C3AED]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                </svg>
+
+                <div class="font-bold text-[#7C3AED] mb-2 text-xl text-center">日々の学びや気づきの可視化</div>
+                <div class="text-base text-gray-500 text-center">日々の成長を記録し、スキルの変化を見える化</div>
+            </div>
+            <div class="bg-white rounded-2xl shadow p-10 flex flex-col items-center min-h-[260px]">
+                <!-- Heroicon: MapIcon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 mb-4 text-[#7C3AED]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+                </svg>
+
+                <div class="font-bold text-[#7C3AED] mb-2 text-xl text-center">スキルマップ機能</div>
+                <div class="text-base text-gray-500 text-center">スキルの棚卸し・成長の道筋を明確化</div>
+            </div>
+            <div class="bg-white rounded-2xl shadow p-10 flex flex-col items-center min-h-[260px]">
+                <!-- Heroicon: PuzzlePieceIcon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 mb-4 text-[#7C3AED]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z" />
+                </svg>
+
+                <div class="font-bold text-[#7C3AED] mb-2 text-xl text-center">ゲーム要素で楽しく成長</div>
+                <div class="text-base text-gray-500 text-center">ゲーミフィケーションで継続的な学びを促進</div>
+            </div>
+            <div class="bg-white rounded-2xl shadow p-10 flex flex-col items-center min-h-[260px]">
+                <!-- Heroicon: ChatBubbleLeftEllipsisIcon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-16 h-16 mb-4 text-[#7C3AED]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                </svg>
+
+                <div class="font-bold text-[#7C3AED] mb-2 text-xl text-center">AIアドバイザーがサポート</div>
+                <div class="text-base text-gray-500 text-center">AIが最適な学びやキャリアを提案</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 機能 -->
+    <section class="w-full flex justify-center bg-white py-8">
+      <img src="/images/function.png" alt="機能イメージ" class="max-w-3xl w-full h-auto rounded-2xl shadow" />
+    </section>
+
+    <!-- skilowgueの強み -->
+    <section class="py-12 md:py-16 bg-[#F7F2FF]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-purple-700 text-center mb-10">skilowgueの強み</h2>
+            <div class="space-y-10">
+                <div class="md:flex items-center">
+                    <div class="md:w-1/2 p-4">
+                        <h3 class="text-xl font-semibold text-purple-600 mb-2"><span class="text-3xl font-bold mr-2">1</span>データ可視化とゲームデザインの融合</h3>
+                        <p class="text-gray-600">スキルや成長をグラフやマップで直感的に可視化。ゲーム要素で楽しく続けられます。</p>
+                    </div>
+                    <div class="md:w-1/2 p-4 text-center">
+                        <div class="w-full h-48 bg-purple-100 rounded-lg flex items-center justify-center text-gray-400">データ可視化イメージ</div>
+                    </div>
+                </div>
+                <div class="md:flex items-center flex-row-reverse">
+                    <div class="md:w-1/2 p-4">
+                        <h3 class="text-xl font-semibold text-purple-600 mb-2"><span class="text-3xl font-bold mr-2">2</span>組織×個人のハイブリッドサポート</h3>
+                        <p class="text-gray-600">個人の成長と組織の目標を両立。AIと上司・同僚の多面的なフィードバックで最適なキャリア支援。</p>
+                    </div>
+                    <div class="md:w-1/2 p-4 text-center">
+                         <div class="w-full h-48 bg-purple-100 rounded-lg flex items-center justify-center text-gray-400">ハイブリッドサポートイメージ</div>
+                    </div>
+                </div>
+                <div class="md:flex items-center">
+                    <div class="md:w-1/2 p-4">
+                        <h3 class="text-xl font-semibold text-purple-600 mb-2"><span class="text-3xl font-bold mr-2">3</span>クラウド型のシンプル導入</h3>
+                        <p class="text-gray-600">クラウドサービスだからすぐに導入・運用可能。セキュリティやサポートも安心です。</p>
+                    </div>
+                     <div class="md:w-1/2 p-4 text-center">
+                        <div class="w-full h-48 bg-purple-100 rounded-lg flex items-center justify-center text-gray-400">クラウド導入イメージ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活用シーン -->
+    <section class="w-full bg-white py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="font-bold text-4xl text-[#7C3AED] text-center mb-12">活用シーン</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- 1 -->
+                <div class="bg-white rounded-2xl shadow p-5 flex items-center gap-4 min-h-[100px] border">
+                    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-[#E9E3FB]">
+                        <!-- AcademicCapIcon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-[#7CA6F9]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+                        </svg>
+                    </span>
+                    <div>
+                        <div class="font-bold text-[#7C3AED] text-base">新入社員の1on1</div>
+                        <div class="text-xs text-gray-500">成長支援や早期戦力化をサポート</div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="bg-white rounded-2xl shadow p-5 flex items-center gap-4 min-h-[100px] border">
+                    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-[#FFF3D6]">
+                        <!-- HomeModernIcon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-[#FFC04D]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+                        </svg>
+                    </span>
+                    <div>
+                        <div class="font-bold text-[#7C3AED] text-base">リモート学習支援</div>
+                        <div class="text-xs text-gray-500">場所を問わず学びを促進</div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="bg-white rounded-2xl shadow p-5 flex items-center gap-4 min-h-[100px] border">
+                    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-[#E3F9E6]">
+                        <!-- UsersIcon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-[#4DD18B]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                        </svg>
+                    </span>
+                    <div>
+                        <div class="font-bold text-[#7C3AED] text-base">チームスキル可視化</div>
+                        <div class="text-xs text-gray-500">スキルの見える化で最適配置</div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="bg-white rounded-2xl shadow p-5 flex items-center gap-4 min-h-[100px] border">
+                    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-[#F9E3F2]">
+                        <!-- SparklesIcon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-[#E96CB7]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+                        </svg>
+                    </span>
+                    <div>
+                        <div class="font-bold text-[#7C3AED] text-base">自己学習習慣化</div>
+                        <div class="text-xs text-gray-500">自律的な成長を後押し</div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="bg-white rounded-2xl shadow p-5 flex items-center gap-4 min-h-[100px] border">
+                    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-[#E9E3FB]">
+                        <!-- BookOpenIcon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-[#A18DF9]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                        </svg>
+                    </span>
+                    <div>
+                        <div class="font-bold text-[#7C3AED] text-base">社内勉強会の成果共有</div>
+                        <div class="text-xs text-gray-500">学びの成果をチームで可視化・共有</div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="bg-white rounded-2xl shadow p-5 flex items-center gap-4 min-h-[100px] border">
+                    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-[#F9E3E3]">
+                        <!-- ChartBarIcon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-[#F96C6C]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                        </svg>
+                    </span>
+                    <div>
+                        <div class="font-bold text-[#7C3AED] text-base">プロジェクトごとのスキル分析</div>
+                        <div class="text-xs text-gray-500">プロジェクト単位でスキル傾向を分析</div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="bg-white rounded-2xl shadow p-5 flex items-center gap-4 min-h-[100px] border">
+                    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-[#E3F9E6]">
+                        <!-- UserGroupIcon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-[#4DD18B]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                        </svg>
+                    </span>
+                    <div>
+                        <div class="font-bold text-[#7C3AED] text-base">メンター・メンティーの進捗管理</div>
+                        <div class="text-xs text-gray-500">成長の進捗をペアで見える化</div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="bg-white rounded-2xl shadow p-5 flex items-center gap-4 min-h-[100px] border">
+                    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-[#FFF3D6]">
+                        <!-- BriefcaseIcon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-[#FFC04D]">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                        </svg>
+                    </span>
+                    <div>
+                        <div class="font-bold text-[#7C3AED] text-base">資格取得のモチベーション維持</div>
+                        <div class="text-xs text-gray-500">資格学習の進捗や達成感を可視化</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 料金プラン Section -->
+    <section class="py-12 md:py-16 bg-[#F7F2FF]">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-8 bg-purple-50 rounded-lg shadow-lg border-2 border-purple-200">
+                    <h3 class="text-xl font-bold text-purple-700 mb-2">スターター</h3>
+                    <p class="text-4xl font-bold text-purple-600 mb-1">¥0</p>
+                    <p class="text-sm text-gray-500 mb-4">お試し・小規模向け</p>
+                    <button class="w-full bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors">詳しく見る</button>
+                </div>
+                <div class="p-8 bg-purple-100 rounded-lg shadow-xl border-2 border-purple-500 transform scale-105">
+                    <h3 class="text-xl font-bold text-purple-700 mb-2">スタンダード</h3>
+                    <p class="text-4xl font-bold text-purple-600 mb-1">¥9,800<span class="text-sm">/月</span></p>
+                    <p class="text-sm text-gray-500 mb-4">中小企業・成長企業向け</p>
+                    <button class="w-full bg-purple-600 text-white py-2 px-4 rounded hover:bg-purple-700 transition-colors">詳しく見る</button>
+                </div>
+                <div class="p-8 bg-purple-50 rounded-lg shadow-lg border-2 border-purple-200">
+                    <h3 class="text-xl font-bold text-purple-700 mb-2">プレミアム</h3>
+                    <p class="text-3xl font-bold text-purple-600 mb-1">お見積り</p>
+                    <p class="text-sm text-gray-500 mb-4">大企業・特殊要件向け</p>
+                    <button class="w-full bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 transition-colors">お問い合わせ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活用事例 Section -->
+    <section class="w-full bg-white py-20">
+      <div class="max-w-5xl mx-auto px-8">
+        <div class="font-bold text-4xl text-[#7C3AED] text-center mb-12">活用事例</div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- 事例1 -->
+          <div class="bg-[#F7F2FF] rounded-2xl shadow flex flex-col overflow-hidden">
+            <div class="w-full h-40 bg-gray-200 flex items-center justify-center">
+              <img src="#" alt="事例画像1" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 flex flex-col items-start">
+              <div class="font-bold text-[#7C3AED] text-lg mb-2">株式会社A</div>
+              <div class="text-gray-700 text-base">導入から運用まで専任担当がサポート。チャットやオンライン面談でいつでも相談可能です。</div>
+            </div>
+          </div>
+          <!-- 事例2 -->
+          <div class="bg-[#F7F2FF] rounded-2xl shadow flex flex-col overflow-hidden">
+            <div class="w-full h-40 bg-gray-200 flex items-center justify-center">
+              <img src="#" alt="事例画像2" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-6 flex flex-col items-start">
+              <div class="font-bold text-[#7C3AED] text-lg mb-2">株式会社B</div>
+              <div class="text-gray-700 text-base">最短1週間で利用開始。既存の人事システムとも連携可能です。</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- サポート体制 Section -->
+    <section class="w-full bg-[#F7F2FF] py-20">
+  <div class="max-w-5xl mx-auto px-8">
+    <div class="font-bold text-[#7C3AED] mb-8 text-3xl">サポート体制</div>
+    <div class="bg-[#F7F2FF] rounded-2xl shadow p-10 mb-6">
+      <div class="font-bold text-[#7C3AED] mb-2 text-xl">24時間サポート体制</div>
+      <div class="text-lg text-gray-500">導入から運用まで専任担当がサポート。チャットやオンライン面談でいつでも相談可能です。</div>
+    </div>
+    <div class="bg-[#F7F2FF] rounded-2xl shadow p-10">
+      <div class="font-bold text-[#7C3AED] mb-2 text-xl">導入スピードが速い</div>
+      <div class="text-lg text-gray-500">最短1週間で利用開始。既存の人事システムとも連携可能です。</div>
+    </div>
+  </div>
+</section>
+
+    <!-- 導入ステップ Section -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-purple-700 mb-10">導入ステップ</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="text-purple-500 font-bold text-xl mb-2">STEP 1</div>
+                    <h3 class="text-lg font-semibold text-purple-600 mb-1">お問い合わせ・ご相談</h3>
+                    <p class="text-sm text-gray-600">まずはお気軽にご相談ください。ご要望や現状をヒアリングします。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="text-purple-500 font-bold text-xl mb-2">STEP 2</div>
+                    <h3 class="text-lg font-semibold text-purple-600 mb-1">ご提案・お見積り</h3>
+                    <p class="text-sm text-gray-600">最適なプランや運用方法をご提案し、お見積りを提示します。</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="text-purple-500 font-bold text-xl mb-2">STEP 3</div>
+                    <h3 class="text-lg font-semibold text-purple-600 mb-1">ご契約・導入サポート</h3>
+                    <p class="text-sm text-gray-600">ご契約後、初期設定や運用開始までしっかりサポートします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お役立ちコンテンツ Section -->
+    <section class="w-full bg-[#F7F2FF] py-14">
+      <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="bg-white rounded-2xl shadow p-8 flex flex-col items-center min-h-[140px]">
+          <div class="font-bold text-[#7C3AED] mb-2 text-xl">導入ガイドPDF</div>
+          <div class="text-base text-gray-500 text-center">スキル管理の始め方を解説</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-8 flex flex-col items-center min-h-[140px]">
+          <div class="font-bold text-[#7C3AED] mb-2 text-xl">サクセス事例</div>
+          <div class="text-base text-gray-500 text-center">他社の導入事例をまとめてご紹介</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-8 flex flex-col items-center min-h-[140px]">
+          <div class="font-bold text-[#7C3AED] mb-2 text-xl">働き方コンサル</div>
+          <div class="text-base text-gray-500 text-center">専門家による無料オンラインセッション</div>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-8 flex flex-col items-center min-h-[140px]">
+          <div class="font-bold text-[#7C3AED] mb-2 text-xl">企業インタビュー</div>
+          <div class="text-base text-gray-500 text-center">導入企業のリアルな声を掲載</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- よくあるご質問 Section -->
+    <section class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-purple-700 text-center mb-10">よくあるご質問</h2>
+            <div class="max-w-2xl mx-auto space-y-4">
+                <details class="bg-white p-4 rounded-lg shadow cursor-pointer">
+                    <summary class="font-semibold text-purple-600">無料トライアルはありますか？</summary>
+                    <p class="text-sm text-gray-600 mt-2">はい、ございます。スタータープランは無料でご利用いただけますので、まずはお試しください。</p>
+                </details>
+                <details class="bg-white p-4 rounded-lg shadow cursor-pointer">
+                    <summary class="font-semibold text-purple-600">データのエクスポートはできますか？</summary>
+                    <p class="text-sm text-gray-600 mt-2">はい、可能です。詳細についてはお問い合わせください。</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">メール: <a href="mailto:t.shinhay@skilowgue.jp" class="hover:text-purple-300">info@skilowgue.jp</a></p>
+            <p class="mb-4">電話: <a href="tel:08033415259" class="hover:text-purple-300">080-3341-5259</a></p>
+            <p class="text-sm text-gray-400">&copy; 2025 skilowgue. All rights reserved.</p>
+        </div>
+    </footer>
+    </main>
+</div>
+</body>
+</html>

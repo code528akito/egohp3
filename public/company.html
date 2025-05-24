@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo.jpg" type="image/jpeg" alt="skilowgue"/>
+    <title>会社概要 | Skilowgue</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: sans-serif; }
+    </style>
+</head>
+<body class="bg-[#F7F2FF] text-gray-700">
+<div class="min-h-screen flex flex-col bg-white relative">
+    <!-- Floating Header -->
+    <div class="fixed top-8 left-0 right-0 z-30 w-full flex justify-center pointer-events-none">
+        <header class="w-full max-w-7xl flex items-center bg-white rounded-full shadow px-14 py-4 border pointer-events-auto">
+            <a href="/" class="flex items-center space-x-3 font-bold text-xl md:text-2xl text-purple-600">
+                <img src="/images/logo.jpg" alt="ロゴ" class="w-10 h-10 rounded-full object-cover" />
+                <span>skilowgue</span>
+            </a>
+            <nav class="flex-1 flex justify-end">
+                <a href="/company.html" class="ml-8 text-base font-semibold text-purple-600 hover:border-b-2 hover:border-[#7C3AED] border-b-2 border-[#7C3AED]">会社概要</a>
+                <a href="/representative.html" class="ml-8 text-base font-semibold text-purple-600 hover:border-b-2 hover:border-[#7C3AED]">代表挨拶</a>
+            </nav>
+        </header>
+    </div>
+    <main class="flex-grow w-full">
+        <section class="w-full min-h-screen flex flex-col md:flex-row">
+            <!-- サイド：イメージ＆キャッチ -->
+            <div class="bg-gradient-to-b from-[#7C3AED] to-[#F7F2FF] md:w-1/3 w-full flex flex-col items-center justify-center pb-16 pt-16 min-h-screen z-10">
+                <img src="/images/logo.jpg" alt="skilowgueロゴ" class="w-24 h-24 rounded-full border-4 border-white shadow-xl mb-4" />
+                <div class="text-white text-2xl font-extrabold mb-2 tracking-wide drop-shadow">skilowgue</div>
+                <div class="text-white text-base opacity-80 text-center mb-8">スキルでつながる、<br>未来をつくる。</div>
+            </div>
+            <!-- メイン：会社情報 -->
+            <div class="flex-1 flex flex-col justify-center px-6 md:px-12 pb-12 pt-20 md:pt-28 lg:pt-32 bg-white min-h-screen">
+                <h1 class="text-3xl md:text-4xl font-bold text-[#7C3AED] mb-6 border-b-2 border-[#F7F2FF] pb-2">会社概要</h1>
+                <div class="space-y-8">
+                    <div class="flex flex-col md:flex-row md:items-center">
+                        <span class="w-32 text-gray-500 font-semibold shrink-0">会社名</span>
+                        <span class="text-gray-800 font-bold ml-2">株式会社skilowgue</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center">
+                        <span class="w-32 text-gray-500 font-semibold shrink-0">設立</span>
+                        <span class="text-gray-800 font-bold ml-2">未定</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center">
+                        <span class="w-32 text-gray-500 font-semibold shrink-0">代表者</span>
+                        <span class="text-gray-800 font-bold ml-2">榛葉　貴郁</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center">
+                        <span class="w-32 text-gray-500 font-semibold shrink-0">所在地</span>
+                        <span class="text-gray-800 font-bold ml-2">東京都渋谷区○○1-2-3</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center">
+                        <span class="w-32 text-gray-500 font-semibold shrink-0">事業内容</span>
+                        <span class="text-gray-800 font-bold ml-2">タレントマネジメントシステムの開発・提供、スキル開発支援</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center">
+                        <span class="w-32 text-gray-500 font-semibold shrink-0">連絡先</span>
+                        <span class="text-gray-800 font-bold ml-2">info@skilowgue.jp</span>
+                    </div>
+                </div>
+                <div class="mt-14">
+                    <h2 class="text-xl font-bold text-[#7C3AED] mb-3">ミッション</h2>
+                    <p class="text-gray-700 text-base leading-relaxed">一人ひとりのスキルを可視化し、成長の軌跡を社会の価値へ。<br>skilowgueは、個人と組織の可能性を最大化するプラットフォームを目指します。</p>
+                </div>
+                <div class="mt-10">
+                    <h2 class="text-xl font-bold text-[#7C3AED] mb-3">バリュー</h2>
+                    <ul class="list-disc pl-6 text-gray-700 space-y-1">
+                        <li>成長を楽しむカルチャー</li>
+                        <li>多様性とチームワークの尊重</li>
+                        <li>テクノロジーで社会課題を解決</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">メール: <a href="mailto:info@skilowgue.jp" class="hover:text-purple-300">info@skilowgue.jp</a></p>
+            <p class="mb-4">電話: <a href="tel:08033415259" class="hover:text-purple-300">080-3341-5259</a></p>
+            <p class="text-sm text-gray-400">&copy; 2025 skilowgue. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

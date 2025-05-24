@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo.jpg" type="image/jpeg" alt="skilowgue"/>
+    <title>代表挨拶 | Skilowgue</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            overflow-x: hidden;
+        }
+        
+        /* グラデーションのアニメーション */
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .gradient-animate {
+            background-size: 400% 400%;
+            animation: gradientFlow 15s ease infinite;
+        }
+        
+        .text-gradient {
+            background: linear-gradient(to right, #7C3AED, #C4B5FD);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .diagonal-bg {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .diagonal-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #7C3AED 0%, #C4B5FD 100%);
+            transform: skewY(-5deg);
+            transform-origin: top left;
+            z-index: -1;
+        }
+        
+        .quote-mark {
+            font-size: 8rem;
+            line-height: 0;
+            position: absolute;
+            opacity: 0.2;
+            color: #7C3AED;
+        }
+        
+        .highlight-text {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .highlight-text::after {
+            content: '';
+            position: absolute;
+            left: -5px;
+            bottom: 0;
+            height: 30%;
+            width: calc(100% + 10px);
+            background-color: rgba(124, 58, 237, 0.2);
+            z-index: -1;
+            transform: rotate(-2deg);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px -12px rgba(124, 58, 237, 0.4);
+        }
+        
+        .slash-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: repeating-linear-gradient(45deg, rgba(124, 58, 237, 0.05) 0, rgba(124, 58, 237, 0.05) 1px, transparent 0, transparent 50%);
+            background-size: 10px 10px;
+            z-index: -1;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#F7F2FF] text-gray-700">
+<div class="min-h-screen flex flex-col relative">
+    <!-- Floating Header -->
+    <div class="fixed top-8 left-0 right-0 z-50 w-full flex justify-center pointer-events-none">
+        <header class="w-full max-w-7xl flex items-center bg-white rounded-full shadow px-14 py-4 border pointer-events-auto">
+            <a href="/" class="flex items-center space-x-3 font-bold text-xl md:text-2xl text-purple-600">
+                <img src="/images/logo.jpg" alt="ロゴ" class="w-10 h-10 rounded-full object-cover" />
+                <span>skilowgue</span>
+            </a>
+            <nav class="flex-1 flex justify-end">
+                <a href="/company.html" class="ml-8 text-base font-semibold text-purple-600 hover:border-b-2 hover:border-[#7C3AED]">会社概要</a>
+                <a href="/representative.html" class="ml-8 text-base font-semibold text-purple-600 hover:border-b-2 hover:border-[#7C3AED] border-b-2 border-[#7C3AED]">代表挨拶</a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- ヒーローセクション -->
+    <section class="relative h-screen overflow-hidden bg-gradient-to-br from-[#7C3AED] via-[#8B5CF6] to-[#C4B5FD] gradient-animate">
+        <!-- 装飾要素 -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgdmlld0JveD0iMCAwIDYwIDYwIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIgMS44LTQgNC00czQgMS44IDQgNC0xLjggNC00IDQtNC0xLjgtNC00TTE2IDE0YzAtMi4yIDEuOC00IDQtNHM0IDEuOCA0IDQtMS44IDQtNCA0LTQtMS44LTQtNE0yNyAyNGMwLTIuMiAxLjgtNCA0LTRzNCAxLjggNCA0LTEuOCA0LTQgNC00LTEuOC00LTQiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==')] opacity-20"></div>
+            <div class="absolute w-[800px] h-[800px] rounded-full bg-[#A78BFA] blur-3xl opacity-30 -top-40 -left-40"></div>
+            <div class="absolute w-[500px] h-[500px] rounded-full bg-[#C4B5FD] blur-3xl opacity-20 bottom-20 right-0"></div>
+            <div class="absolute w-[600px] h-[600px] rounded-full bg-[#7C3AED] blur-3xl opacity-20 -bottom-40 -left-20"></div>
+        </div>
+        
+        <!-- モダンな幾何学模様 -->
+        <div class="absolute inset-0 z-0 opacity-10">
+            <div class="absolute top-0 left-0 w-40 h-40 border-4 border-white rounded-full transform translate-x-20 translate-y-20"></div>
+            <div class="absolute bottom-0 right-0 w-60 h-60 border-4 border-white rounded-full transform -translate-x-20 -translate-y-20"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-1 bg-white opacity-10 rotate-45"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-1 bg-white opacity-10 -rotate-45"></div>
+        </div>
+
+        <div class="container mx-auto h-full flex flex-col items-center justify-center text-white relative z-10 px-4 pt-20">
+            <div data-aos="zoom-in" data-aos-duration="1200" class="w-24 h-24 rounded-full bg-white bg-opacity-10 backdrop-blur-lg mb-10 flex items-center justify-center border border-white/20">
+                <div class="w-16 h-16 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+                    <div class="w-10 h-10 rounded-full bg-white"></div>
+                </div>
+            </div>
+            
+            <h1 data-aos="fade-up" data-aos-duration="1000" class="text-6xl md:text-8xl font-extrabold mb-8 text-center leading-tight">
+                <span class="text-white drop-shadow-lg">代表挨拶</span>
+            </h1>
+            
+            <div data-aos="fade" data-aos-delay="200" data-aos-duration="1000" class="w-40 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent mb-10"></div>
+            
+            <p data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" class="text-2xl md:text-3xl max-w-3xl text-center font-light leading-relaxed tracking-wide">
+                <span class="highlight-text bg-white bg-opacity-10 px-4 py-2 rounded-lg backdrop-blur-sm">「スキルでつながる、未来をつくる。」</span>
+            </p>
+        </div>
+        
+        <div class="absolute bottom-8 left-0 right-0 flex justify-center">
+            <div class="animate-bounce p-2 bg-white bg-opacity-10 rounded-full backdrop-blur-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- 代表挨拶セクション -->
+    <section class="diagonal-bg py-24 px-6 relative">
+        <div class="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-white to-transparent opacity-10"></div>
+        <div class="absolute bottom-0 right-0 w-1/3 h-40 bg-[#C4B5FD] rounded-full filter blur-3xl opacity-20"></div>
+        
+        <div class="container mx-auto max-w-5xl relative">
+            <div class="quote-mark top-10 left-4">"</div>
+            <div class="quote-mark bottom-10 right-4 rotate-180">"</div>
+            
+            <div data-aos="fade-up" class="mb-16 text-center">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">代表挨拶</h2>
+                <div class="w-40 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent mx-auto"></div>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-8 md:p-12 shadow-2xl text-white border border-white/10 card-hover">
+                <div class="absolute -top-6 -left-6 w-12 h-12 rounded-full bg-[#7C3AED] flex items-center justify-center shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 16 16">
+                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                    </svg>
+                </div>
+                
+                <p data-aos="fade-up" data-aos-delay="300" class="text-lg md:text-xl leading-relaxed mb-8 first-letter:text-4xl first-letter:font-bold first-letter:mr-1 first-letter:float-left first-letter:text-[#C4B5FD]">
+                    自分らしさ、ステークホルダーと共に成長を軸とし、
+                    <span class="highlight-text">Well-being</span>を重んじた自己実現、
+                    幼少期に掲げた夢や理想を見失うことなく、
+                    社会の最前線で活躍、変革を起こす人財を輩出すること、
+                    これが私たちのビジョンであり、
+                    <span class="highlight-text">ヒト (タレント)</span> を起点として、挑戦と成長を促す文化の醸成、
+                    思わずわくわくしてしまうスキル育成の仕組みを通して、
+                    タレントのエンゲージメント向上や、多様なキャリアパスの
+                    創造における実現をしていきます。
+                </p>
+                
+                <p data-aos="fade-up" data-aos-delay="400" class="text-lg md:text-xl leading-relaxed">
+                    また個人のスキルを最大化させ、企業の事業規模の拡大、
+                    経営の質/判断速度の向上に寄与し、<span class="highlight-text">日本経済の再生</span>を掲げて、
+                    一同精進してまいります。
+                </p>
+                
+                <div class="mt-10 text-right">
+                    <div class="inline-block">
+                        <div class="text-xl font-semibold">榛葉 貴郁</div>
+                        <div class="text-sm text-white/70">代表取締役</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 略歴セクション -->
+    <section class="py-24 px-6 bg-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-[#F7F2FF] rounded-full -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#F7F2FF] rounded-full translate-y-1/2 -translate-x-1/3"></div>
+        <div class="absolute inset-0 slash-pattern opacity-10"></div>
+        
+        <div class="container mx-auto max-w-5xl relative">
+            <div data-aos="fade-up" class="mb-16 text-center">
+                <h2 class="text-4xl md:text-6xl font-bold text-[#7C3AED] mb-6 tracking-tight">代表略歴</h2>
+                <div class="w-40 h-0.5 bg-gradient-to-r from-transparent via-[#7C3AED] to-transparent mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div data-aos="fade-right" class="md:w-1/3 relative">
+                    <div class="absolute inset-0 bg-[#7C3AED] rounded-2xl rotate-3 opacity-30 transform-gpu"></div>
+                    <div class="absolute inset-0 bg-[#7C3AED] rounded-2xl -rotate-3 opacity-30 transform-gpu"></div>
+                    <img src="/images/Representative.png" alt="代表写真" class="rounded-2xl shadow-2xl relative z-10 border-4 border-white" />
+                    <div class="absolute -bottom-4 -right-4 w-20 h-20 rounded-full bg-[#7C3AED] bg-opacity-20 backdrop-blur-sm"></div>
+                    <div class="absolute -top-4 -left-4 w-16 h-16 rounded-full bg-[#7C3AED] bg-opacity-20 backdrop-blur-sm"></div>
+                </div>
+                
+                <div data-aos="fade-left" class="md:w-2/3">
+                    <div class="p-8 md:p-10 bg-gradient-to-br from-white to-[#F7F2FF]/50 rounded-2xl shadow-xl border border-[#7C3AED]/10 card-hover">
+                        <div class="flex items-center mb-8">
+                            <div class="w-1 h-12 bg-[#7C3AED] mr-4"></div>
+                            <h3 class="text-3xl font-bold text-[#7C3AED]">榛葉 貴郁</h3>
+                        </div>
+                        
+                        <ul class="space-y-6 relative">
+                            <div class="absolute top-0 bottom-0 left-1.5 w-0.5 bg-[#F7F2FF]"></div>
+                            <li data-aos="fade-up" data-aos-delay="100" class="pl-8 relative">
+                                <div class="absolute left-0 top-1 w-3 h-3 rounded-full bg-[#7C3AED]"></div>
+                                <p class="text-lg leading-relaxed text-gray-700">
+                                    <span class="font-semibold">1997年</span>、神奈川県生まれ、法政大学卒。
+                                </p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="200" class="pl-8 relative">
+                                <div class="absolute left-0 top-1 w-3 h-3 rounded-full bg-[#7C3AED]"></div>
+                                <p class="text-lg leading-relaxed text-gray-700">
+                                    <span class="font-semibold">ITベンチャー企業</span>、大手人材会社の新プロダクト領域にて、経営層向けの課題解決ソリューションの経験を経て、
+                                </p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay="300" class="pl-8 relative">
+                                <div class="absolute left-0 top-1 w-3 h-3 rounded-full bg-[#7C3AED]"></div>
+                                <p class="text-lg leading-relaxed text-gray-700">
+                                    <span class="font-semibold">2025年</span>に株式会社スキルローグ (Skilowgue) 設立。
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA セクション -->
+    <section class="py-16 px-6 bg-[#F7F2FF] relative overflow-hidden">
+        <div class="absolute inset-0 slash-pattern opacity-10"></div>
+        
+        <div class="container mx-auto max-w-4xl relative">
+            <div data-aos="fade-up" class="flex flex-col md:flex-row items-center bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-[#7C3AED]/10 overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-[#7C3AED]/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                
+                <div class="md:w-2/3 mb-8 md:mb-0 md:pr-8">
+                    <h2 class="text-3xl font-bold text-[#7C3AED] mb-4">一緒に未来を創りませんか？</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        私たちと共に、スキルを軸とした新しい未来を形作りましょう。<br>
+                        お問い合わせからご連絡をお待ちしております。
+                    </p>
+                </div>
+                
+                <div class="md:w-1/3 flex justify-center">
+                    <a href="mailto:info@skilowgue.jp" class="inline-block bg-[#7C3AED] text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#6D28D9] transition-all duration-300 transform hover:scale-105">
+                        お問い合わせ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">メール: <a href="mailto:info@skilowgue.jp" class="hover:text-purple-300 transition-colors">info@skilowgue.jp</a></p>
+            <p class="mb-4">電話: <a href="tel:08033415259" class="hover:text-purple-300 transition-colors">080-3341-5259</a></p>
+            <p class="text-sm text-gray-400">&copy; 2025 skilowgue. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // AOSアニメーションの初期化
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    });
+</script>
+</body>
+</html>
