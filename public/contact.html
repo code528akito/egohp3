@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/logo.jpg" type="image/jpeg" alt="skilowgue"/>
+    <title>お問い合わせ - Skilowgue</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* カスタムスタイルがあればここに追加 */
+        body {
+            font-family: sans-serif; /* 基本フォントを指定 */
+        }
+        .hero-bg-purple {
+            background-color: #f3e8ff; /* 画像に近い薄い紫色 */
+        }
+        .section-bg-light-purple {
+            background-color: #faf5ff; /* さらに薄い紫色 */
+        }
+        .text-purple-700 {
+            color: #6b46c1; /* 紫色のテキスト */
+        }
+        .text-purple-600 {
+            color: #7c3aed;
+        }
+        .text-purple-500 {
+            color: #8b5cf6;
+        }
+        .border-purple-500 {
+            border-color: #8b5cf6;
+        }
+        .bg-purple-100 {
+            background-color: #ede9fe;
+        }
+        .bg-purple-500 {
+            background-color: #8b5cf6;
+        }
+         .bg-purple-600 {
+            background-color: #7c3aed;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700">
+<div class="min-h-screen flex flex-col bg-[#F7F2FF]">
+    <!-- Header -->
+    <div class="w-full flex justify-center pt-8 pb-4 fixed top-0 left-0 z-50">
+        <header class="w-full max-w-7xl flex items-center bg-white rounded-full shadow px-14 py-4 border">
+            <a href="/" class="flex items-center space-x-3 font-bold text-xl md:text-2xl text-purple-600">
+                <img src="/images/logo.jpg" alt="ロゴ" class="w-10 h-10 rounded-full object-cover" />
+                <span>skilowgue</span>
+            </a>
+            <nav class="flex-1 flex justify-end">
+                <a href="/company.html" class="ml-8 text-base font-semibold text-purple-600 hover:border-b-2 hover:border-[#7C3AED]">会社概要</a>
+                <a href="/representative.html" class="ml-8 text-base font-semibold text-purple-600 hover:border-b-2 hover:border-[#7C3AED]">代表挨拶</a>
+                <a href="/contact.html" class="ml-8 text-base font-semibold text-purple-600 hover:border-b-2 hover:border-[#7C3AED]">お問い合わせ</a>
+            </nav>
+        </header>
+    </div>
+
+    <main class="flex-grow w-full pt-40">
+        <!-- お問い合わせフォーム Section -->
+        <section class="w-full bg-[#F7F2FF] py-20">
+            <div class="max-w-4xl mx-auto px-8">
+                <h1 class="text-4xl md:text-5xl font-bold text-[#7C3AED] text-center mb-12">お問い合わせフォーム</h1>
+                
+                <div class="bg-white rounded-2xl shadow-xl p-10">
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="companyName" class="block text-gray-700 font-medium mb-2">会社名 <span class="text-red-600">*</span></label>
+                            <input type="text" name="companyName" id="companyName" 
+                                class="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-[#7C3AED] focus:border-transparent transition"
+                                required>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="department" class="block text-gray-700 font-medium mb-2">部署名</label>
+                                <input type="text" name="department" id="department" 
+                                    class="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-[#7C3AED] focus:border-transparent transition">
+                            </div>
+                            <div>
+                                <label for="position" class="block text-gray-700 font-medium mb-2">役職名</label>
+                                <input type="text" name="position" id="position" 
+                                    class="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-[#7C3AED] focus:border-transparent transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">お名前 <span class="text-red-600">*</span></label>
+                            <input type="text" name="name" id="name" 
+                                class="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-[#7C3AED] focus:border-transparent transition"
+                                required>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">メールアドレス <span class="text-red-600">*</span></label>
+                                <input type="email" name="email" id="email" 
+                                    class="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-[#7C3AED] focus:border-transparent transition"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">電話番号 <span class="text-red-600">*</span></label>
+                                <input type="tel" name="phone" id="phone" 
+                                    class="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-[#7C3AED] focus:border-transparent transition"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="pt-4">
+                            <div class="flex items-start">
+                                <input type="checkbox" name="privacy_policy" id="privacy_policy" 
+                                    class="mt-1 h-5 w-5 text-[#7C3AED] focus:ring-[#7C3AED] border-gray-300 rounded"
+                                    required>
+                                <label for="privacy_policy" class="ml-3 block text-sm text-gray-700">
+                                    <a href="/privacy.html" target="_blank" class="text-[#7C3AED] hover:underline font-medium">プライバシーポリシー</a>に同意します。お預かりした個人情報は、お問い合わせ対応のみに利用いたします。
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <button type="submit" class="w-full bg-[#7C3AED] text-white font-bold py-4 px-6 rounded-lg hover:bg-[#6B46C1] transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                送信する
+                            </button>
+                        </div>
+                    </form>
+                    <div id="formMessage"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 mt-auto">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2">メール: <a href="mailto:info@skilowgue.jp" class="hover:text-purple-300">info@skilowgue.jp</a></p>
+            <p class="mb-4">電話: <a href="tel:08033415259" class="hover:text-purple-300">xxx-xxxx-xxxx</a></p>
+            <p class="text-sm text-gray-400">&copy; 2025 skilowgue. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+<!-- JavaScript -->
+<script src="/js/contact.js"></script>
+</body>
+</html>
